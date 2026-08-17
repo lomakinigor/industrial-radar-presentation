@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10151d">
+  <meta name="description" content="Промышленный радар — презентация B2B-приложения для отраслевого мониторинга">
+  <title>Промышленный радар — презентация</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="deck">
+    <header class="topbar">
+      <a class="brand" href="#slide-1" aria-label="Первый слайд"><span class="brand-mark"></span><span>Промышленный радар</span></a>
+      <a class="top-link" href="https://blast-insight-bot.lovable.app" target="_blank" rel="noopener">Открыть приложение <span>↗</span></a>
+    </header>
+
+    <section class="slides" aria-live="polite">
+      <article class="slide is-active" id="slide-1" data-slide="1" aria-hidden="false">
+        <div class="copy hero-copy">
+          <p class="eyebrow">B2B-аналитика · Telegram Mini App</p>
+          <h1>Промышленный <em>радар</em></h1>
+          <p class="lead">Отрасль на одном экране: показатели, динамика, технологические сигналы и свежие новости с источниками.</p>
+          <div class="signal-row"><span>Рынок</span><span>Тренды</span><span>Новости</span></div>
+        </div>
+        <div class="radar" aria-hidden="true"><div class="radar-grid"></div><div class="beam"></div><i class="ping p1"></i><i class="ping p2"></i><i class="ping p3"></i><span>LIVE SIGNAL</span></div>
+      </article>
+
+      <article class="slide" id="slide-2" data-slide="2" aria-hidden="true">
+        <div class="copy">
+          <p class="eyebrow">01 · Единая картина</p>
+          <h2>Вместо ручного <em>поиска</em></h2>
+          <p class="lead">Руководитель открывает один экран и быстро понимает состояние ниши: ключевые ориентиры, динамику и важные изменения.</p>
+        </div>
+        <div class="dashboard" aria-label="Схема аналитического экрана">
+          <div class="metric"><small>Объём рынка</small><strong>Показатель</strong><span>динамика</span></div>
+          <div class="metric"><small>Темп роста</small><strong>Тренд</strong><span>прогноз</span></div>
+          <div class="chart"><span>Динамика рынка</span><svg viewBox="0 0 480 160" role="img" aria-label="Условный растущий график"><path class="area" d="M0 145 C80 140 120 118 190 121 S315 93 480 36 L480 160 L0 160Z"/><path class="line" d="M0 145 C80 140 120 118 190 121 S315 93 480 36"/></svg></div>
+        </div>
+      </article>
+
+      <article class="slide" id="slide-3" data-slide="3" aria-hidden="true">
+        <div class="copy compact-copy">
+          <p class="eyebrow">02 · Технологические сигналы</p>
+          <h2>Пять направлений <em>изменений</em></h2>
+          <p class="lead">Каждую тенденцию можно раскрыть и понять её практическое значение для оборудования и бизнеса.</p>
+        </div>
+        <div class="trend-grid">
+          <div class="trend featured"><b>01</b><strong>IoT и автоматизация</strong><span>Удалённый контроль и предиктивное обслуживание</span></div>
+          <div class="trend"><b>02</b><strong>Экология</strong><span>Снижение пыли и повторное использование абразива</span></div>
+          <div class="trend"><b>03</b><strong>Производительность</strong><span>Больше результата за один цикл</span></div>
+          <div class="trend"><b>04</b><strong>Безопасность</strong><span>Меньше ручных операций и рисков</span></div>
+          <div class="trend"><b>05</b><strong>Энергоэффективность</strong><span>Контроль расхода энергии</span></div>
+        </div>
+      </article>
+
+      <article class="slide" id="slide-4" data-slide="4" aria-hidden="true">
+        <div class="copy compact-copy">
+          <p class="eyebrow">03 · AI-мониторинг</p>
+          <h2>Свежие новости — <em>автоматически</em></h2>
+          <p class="lead">Приложение собирает отраслевые материалы, делает короткую русскую сводку и сохраняет переход к первоисточнику.</p>
+        </div>
+        <div class="pipeline" aria-label="Цепочка автоматической подготовки новостей">
+          <div class="pipe"><small>01</small><strong>Supabase</strong><span>серверный запрос</span></div><i>→</i>
+          <div class="pipe"><small>02</small><strong>Perplexity</strong><span>поиск и отбор</span></div><i>→</i>
+          <div class="pipe"><small>03</small><strong>Русская сводка</strong><span>коротко по сути</span></div><i>→</i>
+          <div class="pipe"><small>04</small><strong>Источник</strong><span>проверяемая ссылка</span></div>
+        </div>
+        <p class="proof">Не просто AI-ответ — у каждой новости остаётся источник.</p>
+      </article>
+
+      <article class="slide" id="slide-5" data-slide="5" aria-hidden="true">
+        <div class="copy final-copy">
+          <p class="eyebrow">04 · Продуктовая основа</p>
+          <h2>Один механизм — <em>разные B2B-ниши</em></h2>
+          <p class="lead">Web App работает как самостоятельный мобильный сервис и как Telegram Mini App. Структуру можно адаптировать под оборудование, строительство, логистику или другую узкую отрасль.</p>
+          <div class="platforms"><span>Web App</span><span>Telegram Mini App</span><span>AI-сводки</span><span>Отраслевой контент</span></div>
+          <div class="cta-row"><a class="button primary" href="https://blast-insight-bot.lovable.app" target="_blank" rel="noopener">Открыть приложение ↗</a><a class="button secondary" href="https://portfolio-web-sigma-ruddy.vercel.app" target="_blank" rel="noopener">Вернуться в портфолио</a></div>
+        </div>
+        <div class="orbit" aria-hidden="true"><div>ДАННЫЕ</div><span>АНАЛИЗ</span><i>РЕШЕНИЕ</i></div>
+      </article>
+    </section>
+
+    <footer class="controls">
+      <button class="arrow prev" type="button" aria-label="Предыдущий слайд">←</button>
+      <div class="dots" role="tablist" aria-label="Слайды">
+        <button class="dot is-active" role="tab" aria-selected="true" aria-label="Слайд 1" data-go="1"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-label="Слайд 2" data-go="2"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-label="Слайд 3" data-go="3"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-label="Слайд 4" data-go="4"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-label="Слайд 5" data-go="5"></button>
+      </div>
+      <span class="counter"><b>01</b> / 05</span>
+      <button class="arrow next" type="button" aria-label="Следующий слайд">→</button>
+    </footer>
+  </main>
+  <script src="presentation.js"></script>
+</body>
+</html>
