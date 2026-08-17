@@ -22,6 +22,13 @@ class PresentationContractTests(unittest.TestCase):
         for asset in re.findall(r'(?:href|src)="(?!https?://|#)([^"]+)"', html):
             self.assertTrue((ROOT / asset).is_file(), asset)
 
+    def test_click_and_swipe_navigation_are_wired(self):
+        script = (ROOT / "presentation.js").read_text(encoding="utf-8")
+        self.assertIn("slide.addEventListener('click'", script)
+        self.assertIn("touchstart", script)
+        self.assertIn("touchend", script)
+        self.assertIn("closest('a, button')", script)
+
 
 if __name__ == "__main__":
     unittest.main()
